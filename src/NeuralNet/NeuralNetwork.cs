@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Linq;
 
     public class NeuralNetwork
@@ -79,13 +80,17 @@
                         var value = 0d;
                         for (var previous = 0; previous < this.Layers[l - 1].Size; previous++)
                         {
-                            value += this.Layers[n - 1].Neurons[previous].Value * neuron.Weights[previous];
+                            value += this.Layers[l - 1].Neurons[previous].Value * neuron.Weights[previous];
                         }
 
                         neuron.Value = Sigmoid(value + neuron.Bias);
                     }
+
+                    Trace.TraceInformation($"Neuron[{l},{n}] = {neuron.Value}");
                 }
             }
+
+            Trace.TraceInformation("-----------------------------------------");
 
             var outputLayer = this.Layers[this.NumLayers - 1];
             var result = new double[outputLayer.Size];
@@ -117,21 +122,21 @@
 
                 neuron.Delta = neuron.Value * (1 - neuron.Value) * (output[i] - neuron.Value);
 
-                for (var j = this.NumLayers - 2; j > 2 ; j--)
+                for (var j = this.NumLayers - 2; j >= 1 ; j--)
                 {
                     for (var k = 0; k < this.Layers[j].Size; k++)
                     {
                         var nextNeuron = this.Layers[j].Neurons[k];
 
-                        nextNeuron.Delta = neuron.Value *
-                                           (1 - neuron.Value) *
+                        nextNeuron.Delta = nextNeuron.Value *
+                                           (1 - nextNeuron.Value) *
                                            this.Layers[j + 1].Neurons[i].Weights[k] *
                                            this.Layers[j + 1].Neurons[i].Delta;
                     }
                 }
             }
 
-            for (var i = this.NumLayers - 1; i > 1; i--)
+            for (var i = this.NumLayers - 1; i >= 1; i--)
             {
                 for (var j = 0; j < this.Layers[i].Size; j++)
                 {

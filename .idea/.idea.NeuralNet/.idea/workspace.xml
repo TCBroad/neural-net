@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efa17600-3627-4246-9eab-ce7e8954a1d6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1690462301">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="2663" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="2663" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NeuralNet/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="26" column="73" lean-forward="true" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+              <folding>
+                <marker date="1536110284013" expanded="true" signature="19:862" ph="{...}" />
+                <marker date="1536110284013" expanded="true" signature="32:62" ph="..." />
+                <marker date="1536110284013" expanded="true" signature="81:860" ph="{...}" />
+                <marker date="1536110284013" expanded="true" signature="127:854" ph="{...}" />
+                <marker date="1536110284013" expanded="true" signature="327:441" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NeuralNet/NeuralNetwork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+              <folding>
+                <marker date="1536109370634" expanded="true" signature="19:5212" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="32:130" ph="..." />
+                <marker date="1536109370634" expanded="true" signature="162:5210" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="372:784" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="474:612" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="841:1648" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="904:1638" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1031:1583" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1129:1253" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1278:1517" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1374:1495" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1697:3183" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1759:1895" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="1949:2803" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="2061:2789" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="2162:2255" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="2280:2689" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="2437:2597" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="3059:3145" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="3243:5092" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="3306:3443" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="3515:3655" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="3770:4542" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="4017:4528" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="4101:4510" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="4601:5082" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="4677:5068" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="4889:5050" ph="{...}" />
+                <marker date="1536109370634" expanded="true" signature="5141:5204" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NeuralNet/Neuron.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <marker date="1536107860329" expanded="true" signature="19:463" ph="{...}" />
+                <marker date="1536107860329" expanded="true" signature="84:461" ph="{...}" />
+                <marker date="1536107860329" expanded="true" signature="342:455" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NeuralNet/CryptoRandom.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+              <folding>
+                <marker date="1536110111208" expanded="true" signature="19:493" ph="{...}" />
+                <marker date="1536110111208" expanded="true" signature="32:79" ph="..." />
+                <marker date="1536110111208" expanded="true" signature="117:491" ph="{...}" />
+                <marker date="1536110111208" expanded="true" signature="159:485" ph="{...}" />
+                <marker date="1536110111208" expanded="true" signature="233:475" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/NeuralNet/Neuron.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/NeuralNet/NeuralNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/NeuralNet/CryptoRandom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/NeuralNet/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/NeuralNet/NeuralNetwork.cs" />
+        <option value="$PROJECT_DIR$/src/NeuralNet/CryptoRandom.cs" />
+        <option value="$PROJECT_DIR$/src/NeuralNet/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollFromSource SolutionExplorer="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="NeuralNet" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="NeuralNet" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NeuralNet" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/src/NeuralNet/bin/Debug/netcoreapp2.1/NeuralNet.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/NeuralNet" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/NeuralNet/NeuralNet.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efa17600-3627-4246-9eab-ce7e8954a1d6" name="Default Changelist" comment="" />
+      <created>1536097013808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536097013808</updated>
+      <workItem from="1536097016730" duration="10601000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10601000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info auto_hide="true" id="Favorites" internal_type="SLIDING" order="0" side_tool="true" type="SLIDING" weight="0.32995737" />
+      <window_info id="Database" order="1" weight="0.32942432" />
+      <window_info id="Structure" internal_type="SLIDING" order="2" side_tool="true" type="SLIDING" weight="0.4163113" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.3772936" />
+      <window_info anchor="bottom" id="Tail" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" auto_hide="true" x="-1920" y="0" width="1920" height="1040" id="Find" order="3" type="FLOATING" weight="0.328125" />
+      <window_info anchor="bottom" auto_hide="true" id="Build" order="4" weight="0.30769232" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" order="5" visible="true" weight="0.32329988" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.9173774" weight="0.32664436" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" auto_hide="true" id="TODO" order="9" sideWeight="0.4978678" weight="0.32683486" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.8619403" weight="0.32885906" />
+      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="11" sideWeight="0.0826226" side_tool="true" weight="0.32664436" />
+      <window_info anchor="bottom" x="-1920" y="0" width="1920" height="1040" id="Unit Tests" order="12" type="FLOATING" weight="0.328125" />
+      <window_info anchor="bottom" auto_hide="true" id="Version Control" order="13" weight="0.33556297" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.3277592" />
+      <window_info anchor="bottom" x="67" y="119" width="1604" height="862" id="NuGet" order="15" type="FLOATING" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="TeamCity" internal_type="SLIDING" order="17" type="SLIDING" weight="0.39130434" />
+      <window_info anchor="bottom" id="Change Signature" order="18" sideWeight="0.1652452" side_tool="true" weight="0.36008918" />
+      <window_info anchor="bottom" id="Exception" order="19" weight="0.32912844" />
+      <window_info anchor="bottom" id="Xaml Preview" order="20" weight="0.32912844" />
+      <window_info anchor="bottom" id="Database Changes" order="21" show_stripe_button="false" weight="0.32887402" />
+      <window_info anchor="bottom" id="TypeScript" order="22" weight="0.32912844" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" id="Errors In Solution" internal_type="SLIDING" order="3" type="SLIDING" weight="0.32995737" />
+      <window_info anchor="right" auto_hide="true" content_ui="combo" id="Project" internal_type="SLIDING" order="4" type="SLIDING" weight="0.24946696" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" show_stripe_button="false" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/NeuralNet/Neuron.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <marker date="1536107860329" expanded="true" signature="19:463" ph="{...}" />
+            <marker date="1536107860329" expanded="true" signature="84:461" ph="{...}" />
+            <marker date="1536107860329" expanded="true" signature="342:455" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NeuralNet/CryptoRandom.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <marker date="1536110111208" expanded="true" signature="19:493" ph="{...}" />
+            <marker date="1536110111208" expanded="true" signature="32:79" ph="..." />
+            <marker date="1536110111208" expanded="true" signature="117:491" ph="{...}" />
+            <marker date="1536110111208" expanded="true" signature="159:485" ph="{...}" />
+            <marker date="1536110111208" expanded="true" signature="233:475" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NeuralNet/NeuralNetwork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+          <folding>
+            <marker date="1536109370634" expanded="true" signature="19:5212" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="32:130" ph="..." />
+            <marker date="1536109370634" expanded="true" signature="162:5210" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="372:784" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="474:612" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="841:1648" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="904:1638" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1031:1583" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1129:1253" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1278:1517" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1374:1495" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1697:3183" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1759:1895" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="1949:2803" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="2061:2789" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="2162:2255" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="2280:2689" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="2437:2597" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="3059:3145" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="3243:5092" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="3306:3443" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="3515:3655" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="3770:4542" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="4017:4528" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="4101:4510" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="4601:5082" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="4677:5068" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="4889:5050" ph="{...}" />
+            <marker date="1536109370634" expanded="true" signature="5141:5204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NeuralNet/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="73" lean-forward="true" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+          <folding>
+            <marker date="1536110284013" expanded="true" signature="19:862" ph="{...}" />
+            <marker date="1536110284013" expanded="true" signature="32:62" ph="..." />
+            <marker date="1536110284013" expanded="true" signature="81:860" ph="{...}" />
+            <marker date="1536110284013" expanded="true" signature="127:854" ph="{...}" />
+            <marker date="1536110284013" expanded="true" signature="327:441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
