@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Threading;
 
     class Program
     {
@@ -14,19 +13,22 @@
 
         static void Main(string[] args)
         {
-            var nn = new NeuralNetwork(10, new[] { 2, 4, 2 });
+            var nn = CreateXor();
 
-            TrainingData.Add(new[] { 0d, 1d }, new[] { 1d, 0d });
-            TrainingData.Add(new[] { 1d, 0d }, new[] { 0d, 1d });
+            var randomisedData = new List<KeyValuePair<double[], double[]>>();
 
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 500; i++)
             {
-                foreach (var data in TrainingData)
-                {
-                    nn.Train(data.Key, data.Value);
+                randomisedData.AddRange(TrainingData.Select(x => x));
+            }
 
-                    Display(nn);
-                }
+            randomisedData = randomisedData.OrderBy(x => Guid.NewGuid()).ToList();
+
+            foreach (var data in randomisedData)
+            {
+                nn.Train(data.Key, data.Value);
+
+                Display(nn);
             }
 
             Console.ForegroundColor = ConsoleColor.White;
@@ -47,6 +49,28 @@
             }
         }
 
+        private static NeuralNetwork CreateSwapVars()
+        {
+            var nn = new NeuralNetwork(10, new[] { 2, 4, 2 });
+
+            TrainingData.Add(new[] { 0d, 1d }, new[] { 1d, 0d });
+            TrainingData.Add(new[] { 1d, 0d }, new[] { 0d, 1d });
+
+            return nn;
+        }
+
+        private static NeuralNetwork CreateXor()
+        {
+            var nn = new NeuralNetwork(5, new[] { 2, 2, 1 });
+
+            TrainingData.Add(new[] { 0d, 1d }, new[] { 1d });
+            TrainingData.Add(new[] { 1d, 0d }, new[] { 1d });
+            TrainingData.Add(new[] { 1d, 1d }, new[] { 0d });
+            TrainingData.Add(new[] { 0d, 0d }, new[] { 0d });
+
+            return nn;
+        }
+
         private static void Display(NeuralNetwork nn)
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -59,14 +83,17 @@
                 if (i == 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine("Input layer");
                 }
                 else if (i == nn.NumLayers - 1)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Output layer");
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Layer " + i);
                 }
 
                 var layer = nn.Layers[i];
