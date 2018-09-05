@@ -13,6 +13,10 @@
 
         public int NumLayers { get; }
 
+        public int Runs { get; private set; } = 0;
+
+        public int TrainingIterations { get; private set; } = 0;
+
         public NeuralNetwork(double learningRate, int[] layerDefinitions)
         {
             this.learningRate = learningRate;
@@ -63,6 +67,8 @@
             {
                 throw new ArgumentException("Input size must match input layer size", nameof(input.Count));
             }
+
+            this.Runs++;
 
             for (var l = 0; l < this.NumLayers; l++)
             {
@@ -115,6 +121,8 @@
             }
 
             this.Run(input.ToList());
+
+            this.TrainingIterations++;
 
             for (var i = 0; i < this.Layers[this.NumLayers - 1].Size; i++)
             {
