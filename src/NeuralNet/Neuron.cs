@@ -4,7 +4,7 @@
 
     public class Neuron
     {
-        public List<double> Weights { get; }
+        public List<double> Weights { get; private set; }
 
         public double Value { get; set; }
 

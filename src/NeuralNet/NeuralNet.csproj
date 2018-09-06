@@ -3,6 +3,21 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp2.1</TargetFramework>
+        <Configurations>Debug;Release;NoTrace</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'NoTrace' ">
+      <DefineConstants>DEBUG;NOTRACE;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
+      <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DefineConstants>RELEASE;NETCOREAPP;NETCOREAPP2_1</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    </ItemGroup>
 
 </Project>

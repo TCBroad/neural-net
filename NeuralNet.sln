@@ -6,11 +6,14 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		NoTrace|Any CPU = NoTrace|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.NoTrace|Any CPU.ActiveCfg = NoTrace|Any CPU
+		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.NoTrace|Any CPU.Build.0 = NoTrace|Any CPU
 	EndGlobalSection
 EndGlobal

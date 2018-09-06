@@ -7,19 +7,23 @@
 
     public class NeuralNetwork
     {
-        private readonly double learningRate;
+        // ReSharper disable once MemberCanBePrivate.Global - for serialization
+        public double LearningRate { get; private set; }
 
-        public List<Layer> Layers { get; }
+        public List<Layer> Layers { get; private set; }
 
-        public int NumLayers { get; }
+        public int NumLayers { get; private set;}
 
-        public int Runs { get; private set; } = 0;
+        public int Runs { get; private set; }
 
-        public int TrainingIterations { get; private set; } = 0;
+        public int TrainingIterations { get; private set; }
 
-        public NeuralNetwork(double learningRate, int[] layerDefinitions)
+        public string Name { get; private set; }
+
+        public NeuralNetwork(string name, double learningRate, int[] layerDefinitions)
         {
-            this.learningRate = learningRate;
+            this.Name = name;
+            this.LearningRate = learningRate;
 
             if (layerDefinitions.Length < 2)
             {
@@ -30,6 +34,10 @@
             this.Layers = new List<Layer>(this.NumLayers);
 
             this.Initialise(layerDefinitions);
+        }
+
+        protected NeuralNetwork()
+        {
         }
 
         private void Initialise(int[] layerDefinitions)
@@ -92,11 +100,15 @@
                         neuron.Value = Sigmoid(value + neuron.Bias);
                     }
 
+                    #if TRACE
                     Trace.TraceInformation($"Neuron[{l},{n}] = {neuron.Value}");
+                    #endif
                 }
             }
 
+            #if TRACE
             Trace.TraceInformation("-----------------------------------------");
+            #endif
 
             var outputLayer = this.Layers[this.NumLayers - 1];
             var result = new double[outputLayer.Size];
@@ -149,11 +161,11 @@
                 for (var j = 0; j < this.Layers[i].Size; j++)
                 {
                     var neuron = this.Layers[i].Neurons[j];
-                    neuron.Bias += this.learningRate * neuron.Delta;
+                    neuron.Bias += this.LearningRate * neuron.Delta;
 
                     for (var k = 0; k < neuron.NumWeights; k++)
                     {
-                        neuron.Weights[k] += this.learningRate * this.Layers[i - 1].Neurons[k].Value * neuron.Delta;
+                        neuron.Weights[k] += this.LearningRate * this.Layers[i - 1].Neurons[k].Value * neuron.Delta;
                     }
                 }
             }

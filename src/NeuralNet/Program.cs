@@ -2,27 +2,101 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.IO;
     using System.Linq;
+    using Newtonsoft.Json;
 
-    class Program
+    internal static class Program
     {
         private const int NodeWidth = 14;
         private const int NodeHeight = 6;
+        private const int Iterations = 1000;
 
-        private static Dictionary<double[], double[]> TrainingData = new Dictionary<double[], double[]>();
+        private static readonly Dictionary<double[], double[]> TrainingData = new Dictionary<double[], double[]>();
 
-        static void Main(string[] args)
+        private static readonly JsonSerializerSettings SerializerSettings = new JsonSerializerSettings
         {
-            var nn = CreateXor();
+            Formatting = Formatting.Indented,
+            ContractResolver = new PrivateSetterContractResolver(),
+            ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
+        };
+
+        private static void Main(string[] args)
+        {
+            NeuralNetwork nn;
+            if (args.Length > 0)
+            {
+                nn = LoadNet(args[0]);
+            }
+            else
+            {
+                Console.Write("Create net: ");
+                nn = CreateNet(Console.ReadLine());
+            }
+
+            if (nn == null)
+            {
+                Console.WriteLine("Not found!");
+
+                return;
+            }
+
+            while (true)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("Input: ");
+                var input = Console.ReadLine();
+                if (input == "q")
+                {
+                    break;
+                }
+
+                if (input.StartsWith("s"))
+                {
+                    var filename = input.Substring(2);
+                    SaveNet(nn, filename);
+
+                    continue;
+                }
+
+                var nnData = input.Split(" ").Select(double.Parse).ToList();
+
+                var output = nn.Run(nnData);
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Output: [{string.Join(", ", output)}]");
+            }
+        }
+
+        private static NeuralNetwork CreateNet(string name)
+        {
+            NeuralNetwork nn;
+            switch (name)
+            {
+                case "xor":
+                    nn = CreateXor();
+                    break;
+                case "swap-vars":
+                    nn = CreateSwapVars();
+                    break;
+                default:
+                    return null;
+            }
 
             var randomisedData = new List<KeyValuePair<double[], double[]>>();
 
-            for (var i = 0; i < 500; i++)
+            for (var i = 0; i < Iterations; i++)
             {
                 randomisedData.AddRange(TrainingData.Select(x => x));
             }
 
             randomisedData = randomisedData.OrderBy(x => Guid.NewGuid()).ToList();
+
+            Console.CursorVisible = false;
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
 
             foreach (var data in randomisedData)
             {
@@ -31,27 +105,39 @@
                 Display(nn);
             }
 
+            stopwatch.Stop();
+
             Console.ForegroundColor = ConsoleColor.White;
-            while (true)
+            Console.WriteLine($"\nTraining took: {stopwatch.Elapsed:g}\n");
+            Console.CursorVisible = true;
+
+            return nn;
+        }
+
+        private static NeuralNetwork LoadNet(string filename)
+        {
+            if (!File.Exists(filename))
             {
-                Console.Write("Input: ");
-                var input = Console.ReadLine();
-                if (input == "q")
-                {
-                    break;
-                }
-
-                var nnData = input.Split(" ").Select(double.Parse).ToList();
-
-                var output = nn.Run(nnData);
-
-                Console.WriteLine($"Output: [{string.Join(", ", output)}]");
+                return null;
             }
+
+            var json = File.ReadAllText(filename);
+
+            return JsonConvert.DeserializeObject<NeuralNetwork>(json, SerializerSettings);
+        }
+
+        private static void SaveNet(NeuralNetwork nn, string filename)
+        {
+            var json = JsonConvert.SerializeObject(nn, SerializerSettings);
+
+            File.WriteAllText(filename, json);
+
+            Console.WriteLine("Saved!");
         }
 
         private static NeuralNetwork CreateSwapVars()
         {
-            var nn = new NeuralNetwork(10, new[] { 2, 4, 2 });
+            var nn = new NeuralNetwork("swap-vars", 10, new[] { 2, 4, 2 });
 
             TrainingData.Add(new[] { 0d, 1d }, new[] { 1d, 0d });
             TrainingData.Add(new[] { 1d, 0d }, new[] { 0d, 1d });
@@ -61,7 +147,7 @@
 
         private static NeuralNetwork CreateXor()
         {
-            var nn = new NeuralNetwork(5, new[] { 2, 2, 1 });
+            var nn = new NeuralNetwork("xor", 5, new[] { 2, 2, 1 });
 
             TrainingData.Add(new[] { 0d, 1d }, new[] { 1d });
             TrainingData.Add(new[] { 1d, 0d }, new[] { 1d });
@@ -76,7 +162,7 @@
             Console.ForegroundColor = ConsoleColor.White;
             Console.SetCursorPosition(0, 0);
 
-            Console.WriteLine($"Run: {nn.Runs:N0} | Training iterations: {nn.TrainingIterations:N0}");
+            Console.WriteLine($"Name: {nn.Name} | Run: {nn.Runs:N0} | Training iterations: {nn.TrainingIterations:N0}");
 
             for (var i = 0; i < nn.NumLayers; i++)
             {

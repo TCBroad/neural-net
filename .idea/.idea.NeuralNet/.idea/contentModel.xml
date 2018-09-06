@@ -17,13 +17,16 @@
         <e p="NeuralNetwork.cs" t="Include" />
         <e p="Neuron.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="NoTrace" t="Include">
             <e p="netcoreapp2.1" t="Include">
               <e p="NeuralNet.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="PrivateSetterContractResolver.cs" t="Include" />
         <e p="Program.cs" t="Include" />
+        <e p="swap-vars.net" t="Include" />
+        <e p="xor.net" t="Include" />
       </e>
     </e>
   </component>
