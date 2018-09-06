@@ -66,6 +66,7 @@
 
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Output: [{string.Join(", ", output)}]");
+                Console.WriteLine($"Rounded: [{string.Join(", ", output.Select(x => Math.Round(x, 1).ToString("N1")))}]");
             }
         }
 
@@ -79,6 +80,9 @@
                     break;
                 case "swap-vars":
                     nn = CreateSwapVars();
+                    break;
+                case "binary":
+                    nn = CreateBinary();
                     break;
                 default:
                     return null;
@@ -153,6 +157,22 @@
             TrainingData.Add(new[] { 1d, 0d }, new[] { 1d });
             TrainingData.Add(new[] { 1d, 1d }, new[] { 0d });
             TrainingData.Add(new[] { 0d, 0d }, new[] { 0d });
+
+            return nn;
+        }
+
+        private static NeuralNetwork CreateBinary()
+        {
+            var nn = new NeuralNetwork("binary", 5, new[] { 3, 4, 1 });
+
+            TrainingData.Add(new[] { 0d, 0d, 0d }, new[] { 0.0d });
+            TrainingData.Add(new[] { 0d, 0d, 1d }, new[] { 0.1d });
+            TrainingData.Add(new[] { 0d, 1d, 0d }, new[] { 0.2d });
+            TrainingData.Add(new[] { 0d, 1d, 1d }, new[] { 0.3d });
+            TrainingData.Add(new[] { 1d, 0d, 0d }, new[] { 0.4d });
+            TrainingData.Add(new[] { 1d, 0d, 1d }, new[] { 0.5d });
+            TrainingData.Add(new[] { 1d, 1d, 0d }, new[] { 0.6d });
+            TrainingData.Add(new[] { 1d, 1d, 1d }, new[] { 0.7d });
 
             return nn;
         }
