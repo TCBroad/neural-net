@@ -1,4 +1,4 @@
-﻿namespace NeuralNet
+﻿namespace NeuralNet.Core
 {
     using System;
     using System.Security.Cryptography;

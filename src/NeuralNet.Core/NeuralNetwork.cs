@@ -1,4 +1,4 @@
-﻿namespace NeuralNet
+﻿namespace NeuralNet.Core
 {
     using System;
     using System.Collections.Generic;
@@ -101,13 +101,13 @@
                     }
 
                     #if TRACE
-                    Trace.TraceInformation($"Neuron[{l},{n}] = {neuron.Value}");
+                    // Trace.TraceInformation($"Neuron[{l},{n}] = {neuron.Value}");
                     #endif
                 }
             }
 
             #if TRACE
-            Trace.TraceInformation("-----------------------------------------");
+            // Trace.TraceInformation("-----------------------------------------");
             #endif
 
             var outputLayer = this.Layers[this.NumLayers - 1];

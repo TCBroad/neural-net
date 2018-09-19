@@ -5,6 +5,7 @@
     using System.Diagnostics;
     using System.IO;
     using System.Linq;
+    using Core;
     using Newtonsoft.Json;
 
     internal static class Program
@@ -60,7 +61,7 @@
                     continue;
                 }
 
-                var nnData = input.Split(" ").Select(double.Parse).ToList();
+                var nnData = input.Split(' ').Select(double.Parse).ToList();
 
                 var output = nn.Run(nnData);
 

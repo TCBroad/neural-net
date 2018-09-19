@@ -12,14 +12,10 @@
       <e p="src\NeuralNet" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="binary.net" t="Include" />
-        <e p="CryptoRandom.cs" t="Include" />
-        <e p="Layer.cs" t="Include" />
         <e p="NeuralNet.csproj" t="IncludeRecursive" />
-        <e p="NeuralNetwork.cs" t="Include" />
-        <e p="Neuron.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="NoTrace" t="Include">
-            <e p="netcoreapp2.1" t="Include">
+          <e p="Debug" t="Include">
+            <e p="net471" t="Include">
               <e p="NeuralNet.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
@@ -28,6 +24,30 @@
         <e p="Program.cs" t="Include" />
         <e p="swap-vars.net" t="Include" />
         <e p="xor.net" t="Include" />
+      </e>
+      <e p="src\NeuralNet.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CryptoRandom.cs" t="Include" />
+        <e p="Layer.cs" t="Include" />
+        <e p="NeuralNet.Core.csproj" t="IncludeRecursive" />
+        <e p="NeuralNetwork.cs" t="Include" />
+        <e p="Neuron.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="TrainingData.cs" t="Include" />
+      </e>
+      <e p="src\NeuralNet.Mnist" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MnistReader.cs" t="Include" />
+        <e p="NeuralNet.Mnist.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="t10k-images-idx3-ubyte" t="Include" />
+        <e p="t10k-labels-idx1-ubyte" t="Include" />
+        <e p="train-images-idx3-ubyte" t="Include" />
+        <e p="train-labels-idx1-ubyte" t="Include" />
       </e>
     </e>
   </component>

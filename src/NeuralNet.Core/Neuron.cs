@@ -1,4 +1,4 @@
-﻿namespace NeuralNet
+﻿namespace NeuralNet.Core
 {
     using System.Collections.Generic;
 

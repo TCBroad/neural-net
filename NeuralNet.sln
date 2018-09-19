@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNet", "src\NeuralNet\NeuralNet.csproj", "{7C84811E-B3BA-4F78-B6CF-9424287560AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNet.Core", "src\NeuralNet.Core\NeuralNet.Core.csproj", "{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNet.Mnist", "src\NeuralNet.Mnist\NeuralNet.Mnist.csproj", "{26C756A5-B12C-47EC-A9ED-E7F2907C9036}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,5 +19,17 @@ Global
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.NoTrace|Any CPU.ActiveCfg = NoTrace|Any CPU
 		{7C84811E-B3BA-4F78-B6CF-9424287560AE}.NoTrace|Any CPU.Build.0 = NoTrace|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.NoTrace|Any CPU.ActiveCfg = Debug|Any CPU
+		{6273CF9E-7B4E-410E-8F3F-DFB50846C1D2}.NoTrace|Any CPU.Build.0 = Debug|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.NoTrace|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C756A5-B12C-47EC-A9ED-E7F2907C9036}.NoTrace|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
